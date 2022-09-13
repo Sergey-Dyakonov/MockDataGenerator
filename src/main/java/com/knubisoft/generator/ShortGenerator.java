@@ -1,5 +1,8 @@
 package com.knubisoft.generator;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class ShortGenerator implements Generator<Short> {
     @Override
     public Short generate() {

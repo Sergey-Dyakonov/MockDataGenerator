@@ -1,7 +1,9 @@
 package com.knubisoft.generator;
 
-import java.math.BigDecimal;
+import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+@NoArgsConstructor
 public class BigDecimalGenerator implements Generator<BigDecimal> {
     @Override
     public BigDecimal generate() {
