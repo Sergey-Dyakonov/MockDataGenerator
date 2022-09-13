@@ -21,7 +21,7 @@ import java.util.*;
  *  TODO: 6. enums
  *  TODO: 7. objects of inner classes
  *  TODO: 8. records
- *  TODO: 9. reading all generators from the package 'generator'
+ *  DONE: 9. reading all generators from the package 'generator'
  *  TODO:10. generating all classes from 'sample' dir
  *  TODO:11. write tests
  * */
