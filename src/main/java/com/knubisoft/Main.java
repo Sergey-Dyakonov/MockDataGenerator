@@ -14,7 +14,7 @@ import java.util.*;
 /* Make possible to generate:
  *  TODO: 0. REFACTOR
  *  DONE: 1. primitives
- *  TODO: 2. composite objects (RESOLVE PROBLEM WITH X CLASS)
+ *  DONE: 2. composite objects
  *  DONE: 3. collections
  *  DONE: 4. collections of collections
  *  TODO: 5. arrays
@@ -41,7 +41,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-//        TypeReference<X> x = new TypeReference<>(){};
         System.out.println(populate(new TypeReference<String>() {
         }.getType()));
         System.out.println(populate(new TypeReference<Person>() {
@@ -97,7 +96,7 @@ public class Main {
                 Object instance = cl.getDeclaredConstructor().newInstance();
                 for (Field field : fields) {
                     field.setAccessible(true);
-                    field.set(instance, populate(field.getType()));
+                    field.set(instance, populate(field.getGenericType()));
                 }
                 return instance;
             }
