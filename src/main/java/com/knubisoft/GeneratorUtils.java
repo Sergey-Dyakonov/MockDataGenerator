@@ -13,7 +13,6 @@ import java.util.Map;
 
 public class GeneratorUtils {
     private final static Map<Class<?>, Generator<?>> generator = new LinkedHashMap<>();
-
     @SneakyThrows
     public static Map<Class<?>, Generator<?>> getSimpleGenerator() {
         if (generator.size() == 0) {
