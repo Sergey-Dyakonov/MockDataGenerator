@@ -1,9 +1,6 @@
 package com.knubisoft.sample;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Date;
 
@@ -11,17 +8,9 @@ import java.util.Date;
 @AllArgsConstructor
 @Getter
 @Setter
+@ToString
 public class Person {
     private int age;
     private String name;
     private Date dateOfBirth;
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "age=" + age +
-                ", name='" + name + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
-                '}';
-    }
 }
